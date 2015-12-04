@@ -1,0 +1,15 @@
+<div class="ef-frame banner-video" ng-class="{'fade-in': loaded, 'mobile-banner': isMobile}" ng-style="videoStyle">
+	<!--EightFold Banner Video-->
+	<div id="canvas-wrapper">
+		<video ng-if="!isMobile" class="ef-video" loop preload="none" autoplay="true">
+			<source ng-src="video/eightfold-bg-compress-2.mp4"/>
+		</video>
+		<div class="black-overlay">
+			<div class="banner-image" ng-class="{'animate-in':animateIn, 'animate-out':!animateIn}" ng-include="bannerTypography"></div>
+		</div>
+		<div class="down-arrow-container">
+			<div class="down-arrow"></div>
+		</div>
+	</div>
+
+</div>

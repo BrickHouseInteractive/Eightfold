@@ -1,0 +1,51 @@
+[
+	{
+		"name":"The Cager",
+		"thumb":"img/portfolio/cager-thumb.jpg",
+		"video":"//player.vimeo.com/video/129311050",
+		"description":"Test description..."
+	},
+	{
+		"name":"Douglas J",
+		"thumb":"img/portfolio/aveda-thumb.jpg",
+		"video":"//player.vimeo.com/video/129258943",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Coutesy Ford Advantages",
+		"thumb":"img/portfolio/courtesy-thumb.jpg",
+		"video":"//player.vimeo.com/video/129258942",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Fanuc: Zero Downtime",
+		"thumb":"img/portfolio/fanuc-thumb.jpg",
+		"video":"//player.vimeo.com/video/127078762",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Spartan Motors",
+		"thumb":"img/portfolio/spartan-motors-thumb.jpg",
+		"video":"//player.vimeo.com/video/126948981",
+		"description":"Another test description..."
+	},
+	{
+		"name":"CAMC: Manufacturing is Back",
+		"thumb":"img/portfolio/manufacturing-thumb.jpg",
+		"video":"//player.vimeo.com/video/126949195",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Dowding Industries",
+		"thumb":"img/portfolio/dowding-thumb.jpg",
+		"video":"//player.vimeo.com/video/123166396",
+		"description":"Another test description..."
+	},
+	{
+		"name":"BINC - Book Industry Charitable Foundation",
+		"thumb":"img/portfolio/binc-thumb.jpg",
+		"video":"//player.vimeo.com/video/121504832",
+		"description":"Another test description..."
+	}
+	
+]

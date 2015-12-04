@@ -1,0 +1,13 @@
+<div>
+	<div class="item" ng-repeat="item in portfolio" ng-click="playVideo(item.video)" ng-style="thumbHeight">
+		<div class="thumb" style="background-image: url({{item.thumb}})"></div>
+	</div>
+	<div ng-if="videoVisible" class="ef-portfolio-overlay" ng-click="hideVideo()">
+		<iframe class="ef-portfolio-video" src="{{video}}" width="890" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<div class="menu close" ng-click="hideVideo();" style="left:15px; top:15px">
+		  	<div class="line-top line"></div>
+		  	<div class="line-bottom line"></div>
+		</div>
+	</div>
+	
+</div>
