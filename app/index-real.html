@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EightFold</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='css/style.css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if IE 10]>
+    	<link rel='stylesheet' type="text/css" href='css/ie.css' />
+    <![endif]-->
+  </head>
+  <body ng-app="eightfold" ng-controller="efController">
+  	
+
+
+	<!--Video Banner-->
+	<div class="ef-frame all-center" id="home">
+		<div class="banner-video" ng-class="{'fade-in': loaded}">
+			<video ng-if="!isMobile" class="ef-video" loop preload="none" autoplay="true">
+				<source ng-src="video/8FoldWebsiteBGVideo.mp4"/>
+			</video>
+			<div class="black-overlay mobile-banner"></div>
+			<div class="down-arrow-container">
+				<div class="down-arrow"></div>
+			</div>
+		</div>
+		<!--Loader-->
+  		<h1>Under Construction</h1>
+		<div class="copyright">&copy; EIGHTFOLD 2015</div>
+	</div>
+	
+	<!-- build:js js/plugins.js -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js js/app.js -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/scrollReveal/scrollReveal.js"></script>
+	<script type="text/javascript" src="js/portfolio/ef-portfolio.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

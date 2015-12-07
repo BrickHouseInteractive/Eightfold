@@ -32,6 +32,7 @@ module.exports = function(grunt) {
           'video/**',
           'css/**',
           '**/*.html',
+          '**/*.php',
           '**/*.json',
           '!bower_components/**/*'
         ],
@@ -70,23 +71,38 @@ module.exports = function(grunt) {
       prod: {
         options: {
           authKey: "1and1",
-          host: "multimedia-designer.net",
-          dest: "/eightfold",
+          host: "s583866589.onlinehome.us",
+          dest: "/public_html",
           port: 21
         },
         files: [
           {
             expand: true,
-            cwd: '.',
-            src: ['<%= base.dist %>/**/*']
+            cwd: '<%= base.dist %>',
+            src: ['**/*']
           }
         ]
       },
       dev: {
         options: {
           authKey: "1and1",
+          host: "s583866589.onlinehome.us",
+          dest: "/public_html/<%= grunt.option(\"deployToFolder\") %>",
+          port: 21
+        },
+        files: [
+          {
+            expand: true,
+            cwd: '<%= base.dist %>',
+            src: ['**/*']
+          }
+        ]
+      },
+       erik: {
+        options: {
+          authKey: "erik",
           host: "multimedia-designer.net",
-          dest: "/eightfold/<%= grunt.option(\"deployToFolder\") %>",
+          dest: "/eightfold",
           port: 21
         },
         files: [

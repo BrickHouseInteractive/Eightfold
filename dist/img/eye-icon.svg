@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Attention" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="319.4 3.7 60 50" enable-background="new 319.4 3.7 60 50" xml:space="preserve">
+<g id="attention_1_">
+	<g id="eye">
+		<path id="eye-outer" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M350.9,38.5c12.6,0,17.5-8,17.5-8s-5.1-8-17.5-8
+			c-12.4,0-17,8-17,8S338.2,38.5,350.9,38.5z"/>
+		<g id="eye-iris">
+			<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="351.1" cy="30.5" r="8"/>
+			<circle id="eye-pupil" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="351.1" cy="30.5" r="3.6"/>
+		</g>
+	</g>
+</g>
+</svg>

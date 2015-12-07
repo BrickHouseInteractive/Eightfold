@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	var frames = $(".ef-frame");
 	var windowHeight = window.innerHeight;
 	var frame = 0;
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		}else{
 			downArrow.hide();
 		}
-	});*/
+	});
 
 	//Menu
 	var showMenu = false;
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	});
 
 	//Scrolling
-	/*$(document).on('mousewheel, wheel', function(event) {
+	$(document).on('mousewheel, wheel', function(event) {
 		event.preventDefault();
 		event.stopPropagation();
 		if(animating === false){
@@ -61,5 +61,5 @@ $(document).ready(function(){
 		animationTimeout = setTimeout(function(){
 			animating = false;
 		}, animationTime);
-	};*/
-});
+	};
+});*/

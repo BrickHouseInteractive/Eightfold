@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 50" enable-background="new 0 0 60 50" xml:space="preserve">
+<g id="emotion">
+	<g id="camera">
+		
+			<rect x="16.5" y="27.9" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" width="16.8" height="9.4"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M33.2,28.4
+			c0,0,1.6-0.5,1.6,0.7h3.2v1.6v5.8h-4.8V28.4z"/>
+		<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" points="43.3,29.2 
+			38.1,30.3 38.1,35.7 43.3,37 		"/>
+		
+			<rect x="43.3" y="29.2" fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" width="2.4" height="7.8"/>
+		<polygon fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" points="51.3,26.3 
+			45.5,29.2 45.5,37 51.3,40 		"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M39.5,36.5"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M39.5,30.7"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M40.7,36.5"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M40.7,30.7"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M41.9,36.5"/>
+		<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" d="M41.9,29.4"/>
+		<circle fill="#FFFFFF" cx="16.5" cy="20.5" r="0.5"/>
+		<circle fill="#FFFFFF" cx="31.6" cy="19" r="0.6"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" cx="21.4" cy="32.8" r="2.1"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="51.3" y1="40.8" x2="51.3" y2="25.3"/>
+		<g id="camera-lever">
+			
+				<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-miterlimit="10" x1="21.4" y1="32.8" x2="21.4" y2="39.7"/>
+			<circle fill="#FFFFFF" cx="21.4" cy="39.7" r="1"/>
+		</g>
+		<g id="camera-small-reel">
+			<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" cx="16.5" cy="20.5" r="6.8"/>
+			
+				<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" cx="16.5" cy="20.5" r="2"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="19.8" y1="20.5" x2="21.9" y2="20.5"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="13.1" y1="20.5" x2="11" y2="20.5"/>
+		</g>
+		<g id="camera-large-reel">
+			<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" cx="31.6" cy="19" r="8.3"/>
+			
+				<circle fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-linejoin="round" stroke-miterlimit="10" cx="31.6" cy="19" r="2.4"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="35.5" y1="19" x2="38.5" y2="19"/>
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="27.7" y1="19" x2="24.8" y2="19"/>
+		</g>
+	</g>
+</g>
+</svg>

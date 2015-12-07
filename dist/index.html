@@ -2,94 +2,190 @@
 <html>
   <head>
     <title>EightFold</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='css/style.css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
   <body ng-app="eightfold" ng-controller="efController">
-  	<!--Loader-->
-  	<div loader></div>
+  	
 
   	<!--Menu-->
-	<div ng-class="{'fade-in': loaded}" class="menu-bar">
-	  	<!--div id="menu" class="menu">
-		  	<div class="line-top line"></div>
-		  	<div class="line-bottom line"></div>
-		</div-->
-		<div class="menu-logo" ng-include="'img/ef-logo-small.svg'"></div>
+  	
+	<div ng-class="{'fade-in': loaded, 'all-center':isMobile}" ng-hide="isMobile && !showMenu" class="menu-bar">
+		<a class="menu-bar-item" du-smooth-scroll du-scrollspy href="#home" ng-click="isMobile && toggleMenu()" onclick="">HOME</a>
+		<a class="menu-bar-item" du-smooth-scroll du-scrollspy href="#about" ng-click="isMobile && toggleMenu()" onclick="">ABOUT</a>
+		<a class="menu-bar-item" du-smooth-scroll du-scrollspy href="#vision" ng-click="isMobile && toggleMenu()" onclick="" ng-if="!isMobile">VISION</a>
+		<a class="menu-bar-item" du-smooth-scroll du-scrollspy href="#work" ng-click="isMobile && toggleMenu()" onclick="">WORK</a>
+		<a class="menu-bar-item" du-smooth-scroll du-scrollspy href="#contact" ng-click="isMobile && toggleMenu()" onclick="">CONTACT</a>	
+	</div>
+	<div id="menu" class="menu" ng-class="{close: showMenu}" ng-click="toggleMenu()">
+	  	<div class="line-top line"></div>
+	  	<div class="line-bottom line"></div>
 	</div>
 	
-	<!--div class="menu-overlay">
-		<div class="menu-overlay-container">
-			<div class="menu-item">Home</div>
-			<div class="menu-item">Portfolio</div>
-			<div class="menu-item">About</div>
-			<div class="menu-item">Contact</div>
-		</div>
-	</div-->
+	<!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a style="text-decoration:underline;" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
 	<!--Video Banner-->
-	<div video-banner class="fade-appear"></div>
-
-	<div class="ef-body" ng-class="{loaded: loaded}">
-		<div class="ef-frame ef-big-pic" style="background-image: url(img/clouds.jpg)">
-			<div class="ef-text-section" style="font-size:0.8em">
-				<h1>EIGHTFOLD</h1>
-				<p style="display:none;">Our core principle is to make connections with both our partners and their desired audience. Our livelihood relies on aiding marketers, businesses, and individuals in finding the true emotion behind their experiences and sharing that impassioned message to a variety of audiences. </p>
-				<p class="ef-large-text">Our core principle is to <b class="ef-emphasize">make connections</b> with both our partners and their desired audience. Our livelihood relies on finding the <b class="ef-emphasize">true emotion</b> behind their experiences. </p>
-
-			</div>
-			<div>
-				<div class="item">
-					<img class="ef-icon" src="img/camera-icon.png"/><br/>
-					<div class="ef-button">VIEW OUR REEL</div>
-				</div>
-				<div class="item">
-					<img class="ef-icon" src="img/eye-icon.png"/><br/>
-					<div class="ef-button" ng-click="playVideo('//player.vimeo.com/video/129498571')">BEHIND THE SCENES</div>
-				</div>
-				<div class="item">
-					<img class="ef-icon" src="img/rocket-icon.png"/><br/>
-					<div class="ef-button">FOR FUN</div>
-				</div>
+	<div class="ef-frame all-center" id="home">
+		<div class="banner-video" ng-class="{'fade-in': loaded}">
+			<video ng-if="!isMobile" class="ef-video" loop preload="none" autoplay="true">
+				<source ng-src="video/8FoldWebsiteBGVideo.mp4"/>
+			</video>
+			<div class="black-overlay mobile-banner"></div>
+			<div class="down-arrow-container">
+				<div class="down-arrow"></div>
 			</div>
 		</div>
-
-		<!--div class="ef-frame ef-big-pic" scroll-reveal style="background-image: url(img/lake.jpg)">
-			<div class="ef-big-pic-contents">
-				<img src="img/attention.png"/>
-				<div class="ef-text-section" scroll-reveal style="font-size:0.6em;">
-					<h1>EIGHTFOLD</h1>
-					<p style="display:none;">Our core principle is to make connections with both our partners and their desired audience. Our livelihood relies on aiding marketers, businesses, and individuals in finding the true emotion behind their experiences and sharing that impassioned message to a variety of audiences. </p>
-					<p class="ef-large-text">Our core principle is to <b class="ef-emphasize">make connections</b> with both our partners and their desired audience. Our livelihood relies on finding the <b class="ef-emphasize">true emotion</b> behind their experiences. </p>
-					<div class="ef-button">VIEW OUR REEL</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="ef-frame ef-big-pic" scroll-reveal style="background-image: url(img/flowers.jpg);">
-			<div class="ef-big-pic-contents">
-				<img src="img/emotion.png"/>
-				<div class="ef-text-section">
+		<!--Loader-->
+  		<div class="ef-logo">
+  			<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1409.7 335.3" enable-background="new 0 0 1409.7 335.3" xml:space="preserve">
+			<g>
+				<path id="logo-eight" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M37.2,189.9c44,13.7,106.3-3.9,136-39c-3.7-7.3-40.2,21.9-18.8,39.1c28.2,22.7,97.9-5.8,133.4-39.1c-7.6,7.2-10.6,28.1,1.1,34.3
+					s35.5,3.2,48.4,0.2c45.4-10.4,76.2-21.9,113.8-38.3c-12.2,3.9-20.1,12.5-20.1,23.9c0,19,24.8,10.4,30.9,0.9
+					c-12.5,56.7-40.5,146.4-54.6,147.3c-16.8,1.1,37.9-70.4,71.6-99.4c37.9-32.6,66.3-43.3,105.4-68.3c43.7-28,84.1-151.3,64.3-121.7
+					c-11.4,17-38.4,94-78.2,164.8c21.3-20.5,64.7-44.5,64.7-44.5s0.5,14.8,20,29.8c32.2,24.8,72.3,8.2,109.8-10.2
+					c37.5-18.4,82.3-54.9,88.7-96.9c4-26.6-35.8,65.8-50.6,94.8c-5.9,11.6-10,20.5-12.7,33.3c-2.5,11.5,17.2,27.7,20,17.6
+					c2.8-10.2-13.8-34.2-25.8-45.7c45.1-1,94.9-9,136.2-27.2"/>
+				<path id="logo-i-dot" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+					M297.6,97.9c0,5.2,48.3,1.4,68.1-2.6"/>
+			</g>
+			<g id="logo-fold">
+				<g>
 					
-					<p>Our video production services extend from the concept's infancy through post production to the implantation strategy. We develop our strategic creative content to live entirely alone, to be a seedling engineered as a starting point for a new brand or campaign, or designed to perfectly integrate into established brands or campaigns.</p>
+						<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" x1="963" y1="123.3" x2="897.2" y2="123.3"/>
+					<polyline fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" points="897.2,193.8 
+						897.2,52.1 982.8,52.1 		"/>
+				</g>
+				
+					<circle fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" cx="1062.4" cy="122.3" r="71"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" d="M1306.4,193
+					c39,0,70.6-31.3,70.6-70.3s-31.6-70.6-70.6-70.6H1264V193H1306.4z"/>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" points="1159.2,52.1 
+					1159.2,193.2 1237.4,193.2 	"/>
+			</g>
+			</svg>
+  		</div>
+	</div>
+
+
+	<div ng-show="loaded"  ng-cloak>
+
+		<!--About-->
+		<div class="ef-frame all-center" id="about">
+			<div class="ef-text-section">
+				<p class="ef-large-text">Eightfold is a creative media house that specializes in video pre-production, production and post-production.</p><p>
+				We create content for a variety of uses including commercial, online, branding, and live event. Our other areas of expertise extends to graphic design, mograph design, and social media identity. 
+				Every video is developed from concept to delivery, keeping each step in house to ensure our content lives up to Eightfold’s high standard of quality.<br/><a href="" ng-click="showAboutMore = true">Read more...</a></p>
+			</div>
+			<div style="width:100%">
+				<div class="item" ng-init="animateIcon1 = false">
+					<div class="ef-icon" ng-class="{'animate-icon':animateIcon1}" ng-include="'img/camera-icon.svg'"></div><br/>
+					<div class="ef-button" ng-mouseover="animateIcon1 = true" ng-mouseleave="animateIcon1 = false" ng-click="playVideo('//player.vimeo.com/video/133867040')">VIEW OUR REEL</div>
+				</div>
+				<div class="item" ng-init="animateIcon = false">
+					<div class="ef-icon" ng-class="{'animate-icon':animateIcon2}" ng-include="'img/eye-icon.svg'"></div><br/>
+					<div class="ef-button" ng-mouseover="animateIcon2 = true" ng-mouseleave="animateIcon2 = false" ng-click="playVideo('//player.vimeo.com/video/129498571')">BEHIND THE SCENES</div>
+				</div>
+				<div class="item" ng-init="animateIcon3 = false">
+					<div class="ef-icon" ng-class="{'animate-icon':animateIcon3}" ng-include="'img/rocket-icon.svg'"></div><br/>
+					<div class="ef-button" ng-mouseover="animateIcon3 = true" ng-mouseleave="animateIcon3 = false" ng-click="playVideo('//player.vimeo.com/video/133182482')">FOR FUN</div>
+				</div>
+			</div>
+			<div ng-show="showAboutMore" class="ef-portfolio-overlay all-center" style="position:absolute;" ng-click="hideAboutMore()">
+				<div class="ef-text-section" style="text-align:left;">
+					<p>Eightfold is in the business of engagement. We are constantly striving to make a deep connection with our audiences through the understanding of perception. We do this by helping marketers, businesses, and individuals identify the true emotion behind their experiences and share that impassioned message with the right people.</p>
+
+					<p>We seek the opportunity to exceed our partners’ expectations through cinematic storytelling by captivating viewers, evoking emotion, and orienting perceptions in a way that is organizationally productive and timely.</p>
+
+					<p>We strategically develop our content to fit our partners’ needs, whether it be for a stand-alone production, part of a rebranding effort, or material to be integrated into an established brand or campaign.</p>
+
+					<p>Although at its core Eightfold is a high end video production house, our creative competency extends to the fields of graphic design and social media. In these areas, we use our same creative ideals to develop visual and social content that further strengthens the strategic connections between our partners and their target audiences.</p>
+				</div>
+				<div class="menu close" ng-click="hideAboutMore();" style="position:absolute;">
+				  	<div class="line-top line"></div>
+				  	<div class="line-bottom line"></div>
 				</div>
 			</div>
 		</div>
 
-		<div class="ef-frame ef-big-pic" scroll-reveal style="background-image: url(img/clouds.jpg)">
-			<div class="ef-big-pic-contents">
-				<img src="img/perception.png"/>
-				<div class="ef-text-section" scroll-reveal>
-					<p>Although our services are built on the foundation of advanced video production, we do not stop there. Our creative content design allows us to extend our reach to the fields of graphic design and social media. In these ever-evolving fields we use our same creative ideals to develop content that forms strategic connections with our partners' target audiences.</p>
-				</div>
-			</div>
-		</div-->
 
-		<!--Portfolio-->
-		<div class="ef-frame fade-appear" style="overflow:inherit">
+		<!--Vision-->
+		<div ng-show="!isMobile" class="ef-frame animate-icon" id="vision" >
+			<div id="ef-rotator" class="ef-rotator" ng-include="bannerTypography"></div>
+			<div class="rotator-selection">
+				<div ng-repeat="type in typography" class="rotator-select" ng-click="getNextTypography($index)" ng-class="{active:$index == currentTypography}"></div>
+			</div>
+		</div>
+
+		<!--Work-->
+		<div class="ef-frame ef-portfolio-frame"  id="work">
 			<div ef-portfolio></div>
 		</div>
+
+		<!--Contact-->
+		<div class="ef-frame ef-contact-frame all-center"  id="contact">
+				<p class="ef-large-text">We would love to work with you, drop us a line.</p>
+				<form ng-click="contactStatus = null" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>			
+					<input name="name" 
+						type="text"
+						class="ef-input" 
+						ng-model="formData.name"
+						placeholder="NAME*"
+						required
+	       			/>
+					<input name="email"
+						type="text"
+						class="ef-input" 
+						ng-model="formData.email"
+						placeholder="EMAIL*"
+						ng-pattern="/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/"
+						required
+					/>
+					<input name="phone"
+						type="tel"
+						class="ef-input" 
+						ng-model="formData.phone"
+						placeholder="PHONE"
+					/>
+					<input name="test"
+						type="hidden"
+						class="ef-input" 
+						ng-model="formData.hidden"
+						required
+					/>
+					<textarea name="message"
+						ng-model="formData.message"
+						class="ef-input" 
+						placeholder="MESSAGE*"
+						required
+					></textarea>
+					<br/>
+					<button class="ef-button ef-input" ng-class="{'contact-success':contactStatus == 'loading' || contactStatus == 'success'}" type="submit">
+						<span ng-show="contactStatus == null || contactStatus == 'error'">SUBMIT</span>
+						<span ng-show="contactStatus == 'success'" class="fa fa-check"></span>
+						<span ng-show="contactStatus == 'loading'" class="fa  fa-ellipsis-h"></span>
+					</button>
+					<div ng-show="contactStatus =='error'" class="contact-error">{{errorMessage}}</div>
+				</form>
+				<div class="ef-divider-top">
+					<a class="ef-phone" href="tel:2489531170"><i class="fa fa-phone"></i> 248.953.1170 </a>
+					<a class="ef-email" href="mailto:hello@eightfold-creative.com "><i class="fa fa-envelope"></i> hello@eightfold-creative.com</a>
+					<a class="fa fa-vimeo-square" href="https://vimeo.com/eightfold" target="_blank"></a>
+					<a class="fa fa-instagram" href="https://instagram.com/eightfoldllc/" target="_blank"></a>
+					<a class="fa fa-facebook" href="https://www.facebook.com/eightfoldmarketing" target="_blank"></a>
+					
+					
+				</div>
+			<div class="copyright">&copy; EIGHTFOLD 2015</div>
+		</div>
+		
 	</div>
 	
 	<script src="js/plugins.js"></script>

@@ -2,13 +2,13 @@
 	{
 		"name":"The Cager",
 		"thumb":"img/portfolio/cager-thumb.jpg",
-		"video":"//player.vimeo.com/video/129311050",
+		"video":"//player.vimeo.com/video/120546499",
 		"description":"Test description..."
 	},
 	{
-		"name":"Douglas J",
-		"thumb":"img/portfolio/aveda-thumb.jpg",
-		"video":"//player.vimeo.com/video/129258943",
+		"name":"Beckers Bridal",
+		"thumb":"img/portfolio/beckers-thumb.jpg",
+		"video":"//player.vimeo.com/video/121398766",
 		"description":"Another test description..."
 	},
 	{
@@ -20,7 +20,7 @@
 	{
 		"name":"Fanuc: Zero Downtime",
 		"thumb":"img/portfolio/fanuc-thumb.jpg",
-		"video":"//player.vimeo.com/video/127078762",
+		"video":"//player.vimeo.com/video/133785663",
 		"description":"Another test description..."
 	},
 	{
@@ -30,9 +30,9 @@
 		"description":"Another test description..."
 	},
 	{
-		"name":"CAMC: Manufacturing is Back",
-		"thumb":"img/portfolio/manufacturing-thumb.jpg",
-		"video":"//player.vimeo.com/video/126949195",
+		"name":"Douglas J",
+		"thumb":"img/portfolio/aveda-thumb.jpg",
+		"video":"//player.vimeo.com/video/129258943",
 		"description":"Another test description..."
 	},
 	{

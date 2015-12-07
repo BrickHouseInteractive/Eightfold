@@ -16,8 +16,7 @@ directive('videoBanner', ['$timeout', function($timeout){
 		// compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
 		link: function($scope, iElm, iAttrs, controller) {
 
-			$scope.videoStyle = {height: window.innerHeight};
-			$scope.animateIn = true;
+			/*$scope.animateIn = true;
 			$scope.bannerTypography = null;
 			var typography = [
 				'img/attention-background.svg',
@@ -49,7 +48,7 @@ directive('videoBanner', ['$timeout', function($timeout){
 						getNextTypography();
 					}, 750)
 				}, 9000)
-			}
+			}*/
 		}
 	};
 }]);
