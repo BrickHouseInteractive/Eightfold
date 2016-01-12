@@ -1,26 +1,8 @@
 [
 	{
-		"name":"The Cager",
-		"thumb":"img/portfolio/cager-thumb.jpg",
-		"video":"//player.vimeo.com/video/120546499",
-		"description":"Test description..."
-	},
-	{
-		"name":"Beckers Bridal",
-		"thumb":"img/portfolio/beckers-thumb.jpg",
-		"video":"//player.vimeo.com/video/121398766",
-		"description":"Another test description..."
-	},
-	{
-		"name":"Coutesy Ford Advantages",
-		"thumb":"img/portfolio/courtesy-thumb.jpg",
-		"video":"//player.vimeo.com/video/129258942",
-		"description":"Another test description..."
-	},
-	{
-		"name":"Fanuc: Zero Downtime",
-		"thumb":"img/portfolio/fanuc-thumb.jpg",
-		"video":"//player.vimeo.com/video/133785663",
+		"name":"Dowding Industries",
+		"thumb":"img/portfolio/dowding-thumb.jpg",
+		"video":"//player.vimeo.com/video/123166396",
 		"description":"Another test description..."
 	},
 	{
@@ -30,22 +12,41 @@
 		"description":"Another test description..."
 	},
 	{
-		"name":"Douglas J",
-		"thumb":"img/portfolio/aveda-thumb.jpg",
-		"video":"//player.vimeo.com/video/129258943",
+		"name":"Tech Twurl",
+		"thumb":"img/portfolio/techtwurl-thumb.jpg",
+		"video":"//player.vimeo.com/video/141609621",
 		"description":"Another test description..."
 	},
 	{
-		"name":"Dowding Industries",
-		"thumb":"img/portfolio/dowding-thumb.jpg",
-		"video":"//player.vimeo.com/video/123166396",
+		"name":"The Cager",
+		"thumb":"img/portfolio/cager-thumb.jpg",
+		"video":"//player.vimeo.com/video/120546499",
+		"description":"Test description..."
+	},
+	{
+		"name":"Quinn XCII",
+		"thumb":"img/portfolio/quinn-thumb.jpg",
+		"video":"//player.vimeo.com/video/141471482",
 		"description":"Another test description..."
 	},
 	{
-		"name":"BINC - Book Industry Charitable Foundation",
-		"thumb":"img/portfolio/binc-thumb.jpg",
-		"video":"//player.vimeo.com/video/121504832",
+		"name":"Kallman Legal",
+		"thumb":"img/portfolio/kallman-thumb.jpg",
+		"video":"//player.vimeo.com/video/139241212",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Michigan State University",
+		"thumb":"img/portfolio/msu-thumb.jpg",
+		"video":"//player.vimeo.com/video/148246233",
+		"description":"Another test description..."
+	},
+	{
+		"name":"Cafe Via",
+		"thumb":"img/portfolio/cafe-thumb.jpg",
+		"video":"//player.vimeo.com/video/136893170",
 		"description":"Another test description..."
 	}
+	
 	
 ]

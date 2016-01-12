@@ -98,7 +98,7 @@ module.exports = function(grunt) {
           }
         ]
       },
-       erik: {
+      erik: {
         options: {
           authKey: "erik",
           host: "multimedia-designer.net",
