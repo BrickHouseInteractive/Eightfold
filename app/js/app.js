@@ -1,5 +1,4 @@
 
-//var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 var isMobile = window.innerWidth < 800;
 
 $(document).ready(function(){
@@ -14,20 +13,13 @@ $(document).ready(function(){
 })
 
 
-
-
-/**
-*  Module
-*
-* Description
-*/
 angular.module('eightfold', ['ngSanitize','ngAnimate','duScroll']).value('duScrollDuration', 1000)
 .run(function($rootScope) {
     if(!window.history || !history.replaceState) {
       return;
     }
     $rootScope.$on('duScrollspy:becameActive', function($event, $element){
-      //Automaticly update location
+      //Automaticly update location on scroll
       var hash = $element.prop('hash').replace("#","#/");
       if (hash) {
         history.replaceState(null, null, hash);
@@ -152,7 +144,7 @@ angular.module('eightfold', ['ngSanitize','ngAnimate','duScroll']).value('duScro
 		}, animationTime+250);	
 	}
 
-	$(document).on('mousewheel, wheel', handleScroll);
+	//$(document).on('mousewheel, wheel', handleScroll);
 
 	$rootScope.$on('duScrollspy:becameActive', function($event, $element){
 		frame = frames.indexOf($element.prop("hash"))

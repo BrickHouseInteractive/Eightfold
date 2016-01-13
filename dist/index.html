@@ -6,8 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet' href='css/style.css' />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='css/style.css' />
   </head>
   <body ng-app="eightfold" ng-controller="efController">
   	
@@ -80,7 +80,8 @@
 		<!--About-->
 		<div class="ef-frame all-center" id="about">
 			<div class="ef-text-section">
-				<p class="ef-large-text">Eightfold is a creative media house that specializes in video pre-production, production and post-production.</p><p>
+				<h1>Eightfold is a creative media house that specializes in video pre-production, production and post-production.</h1>
+				<p>
 				We create content for a variety of uses including commercial, online, branding, and live event. Our other areas of expertise extends to graphic design, mograph design, and social media identity. 
 				Every video is developed from concept to delivery, keeping each step in house to ensure our content lives up to Eightfold’s high standard of quality.<br/><a href="" ng-click="showAboutMore = true">Read more...</a></p>
 			</div>
@@ -129,9 +130,24 @@
 			<div ef-portfolio></div>
 		</div>
 
+		<div class="partners-section">
+		
+				<h2>Our Partners</h2>
+				<img class="partners-image" src="img/partners/delta-dental.png">
+				<img class="partners-image" src="img/partners/fanuc.png">
+				<img class="partners-image" src="img/partners/dart.png">
+				<img class="partners-image" src="img/partners/volunteers-of-america.png">
+				<img class="partners-image" src="img/partners/gm.png">
+				<img class="partners-image" src="img/partners/emergent.png">
+				<img class="partners-image" src="img/partners/spartan-motors.png">
+				<img class="partners-image" src="img/partners/monroe-cc.png">
+				<img class="partners-image" src="img/partners/gillespie-group.png">
+				<img class="partners-image" src="img/partners/douglas-j.png">
+		</div>
+
 		<!--Contact-->
 		<div class="ef-frame ef-contact-frame all-center"  id="contact">
-				<p class="ef-large-text">We would love to work with you, drop us a line.</p>
+				<h2>We would love to work with you, drop us a line.</h2>
 				<form ng-click="contactStatus = null" name="contactForm" ng-submit="submitForm(contactForm.$valid)" novalidate>			
 					<input name="name" 
 						type="text"
